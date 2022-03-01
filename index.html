@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filips Porfolio</title>
-    <link rel="stylesheet" href="u3_CSS/u3style.css">
+    <link rel="stylesheet" href="css/pw_style.css">
 
 </head>
 <body>
@@ -13,71 +13,73 @@
         <label for="menucheckbox" id="dropmenuicon"></label>
         <input type="checkbox" id="menucheckbox">
         <ul>
-            <li><a href="index.html" class="dennasidan"> Home</a></li>
-            <li><a href="u3_beställ.html">Projecs</a></li>
-            <ul>
-                <li><a href="u3_lunch.html">lunch</a></li>
-                <li><a href="u3_middag.html">middag</a></li>
-                <li><a href="u3_takeaway.html">TakeAway</a></li>
-            </ul>
-            <li><a href="u3_meny.html"> About me</a>
-            </li>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> About me</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
 
     <header>
-        <a href="index.html">
-            <img src="img/YILIlogga.png" alt="logga">
-        </a>
+
     </header>
 
     <main>
-        <div class="startstruktur" id="startsida">
-            <a id="rapportlänk" href="Webteknik_upg.3.pdf">Rapportlänk</a>
-            <h1 id="resturang">---Kinesisk resturang---</h1>
-            <p id="titel">YiLi</p>
+        <section id="home">
+            <div class="main">
+                <h1 id="namn">FILIP LEE KOCKENDAL</h1>
+                <h2 class="rubrik">UX DESIGNER AND COGNITIVE THINKER</h2>
+                <p>I am a hardworking and passionate designer based in Gothenburg, Sweden. This website is a collection of some of the work I have done.</p>
+            </div>
 
-                
-            <div id="buttonswrapper"> 
-                <div class="buttons"> 
-                    <a href="u3_beställ.html">
-                    Beställ Online</a>
+        </section>
+
+        <section id="about">
+            <div class="row">
+                <div id="me">
+                    <h1 class="rubrik">ABOUT ME</h1>
+                    <img src="" alt="">
+                    <div class="info">
+                        <p>Hi! My name is Filip Kockendal, I am 21 years old and studying the second year of cognitive science under the Department of Applied Information Technology at the University of Gothenburg. I mainly focus on human-computer interaction and am passionate in UX design. Therefore I welcomes all opportunities that encourage self-development in a stimulating environment</p>
+                    </div>
                 </div>
 
-                <div class="buttons">
-                    <a href="u3_meny.html">
-                        Våran meny</a>
+                <div id="erfarenhet">
+                    <h2 class="rubrik">EXPERIENCE</h2>
+                    <div class="info">
+                        <p>Experienced in sales and   providing excellent customer 
+                        service. For more information se my resume.</p>
+                    </div>
+
+                    <button class="button">
+                        VIEW RESUME
+                    </button>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="projects">
+            <div class="box">
+                <div class="projectinfo">
+                    <h1 class="rubrik">RESPONSIVE RESTURANT WEBSITE</h1>
+                    <p>Redesign of a chinese website to a response website that takes  online orders. </p>
+               </div>
+              <div id="greenbox">
+                <img src="img/Homebackground.png" alt="">
+              </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h1 class="rubrik">WORK TOGETHER</h1>
+
+
+        </section>
+        
     </main>
 
     <footer>
-        <section class="footwrapper">
-            <h3 class="footerhead">Kontakt</h3>
-            <div class="footerdiv">
-                <p>Tel 031-25 25 93</p>
-                <p>resturangyili@hotmail.com</p>
-                <a href="u3_kontakt.html">Kontaktformulär</a>
-            </div>
-        </section>
 
-        <section class="footwrapper">
-            <h4 class="footerhead">Öppetider</h4>
-            <div class="footerdiv">
-                <p>Måndagar: Stängt</p>
-                <p>Tis-fre: 11:00-20:00 </p>
-                <p>Lör-sön: 12:00-20:00</p>
-            </div>
-        </section>
-
-        <section class="footwrapper">
-            <h3 class="footerhead">Om mig</h3>
-            <div class="footerdiv">
-                <p>Munkebäckstorget 4</p>
-                <p> 416 73 Göteborg</p>
-            </div>
-        </section>
     </footer>
     
 </body>
