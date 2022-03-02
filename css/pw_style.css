@@ -214,6 +214,7 @@ nav a.dennasidan {
     text-align: justify;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 20px;
 }
 
 /* Projects */
@@ -264,8 +265,8 @@ nav a.dennasidan {
 }
 
 .projectinfo h1 {
-    margin-bottom:;
-    padding-bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #greenbox {
@@ -365,6 +366,14 @@ nav a.dennasidan {
         width: 300px ;
         height: 650px;
         gap: 30px;
+    }
+
+    .projectinfo p {
+        padding-bottom: 20px;
+    }
+
+    .box div{
+        padding-bottom: 0px;
     }
     
     #greenbox {
