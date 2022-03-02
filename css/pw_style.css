@@ -320,6 +320,8 @@ nav a.dennasidan {
 #contact h1 {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    text-align: center;
+
 }
 
 #contact p {
@@ -346,7 +348,7 @@ nav a.dennasidan {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100%;
+    gap: 200px;
 }
 
 #contactlinks a {
@@ -419,7 +421,11 @@ nav a.dennasidan {
 }
 
 
+
 @media screen and (max-width: 650px) {
+    #logo {
+        display: none;
+    }
 
     .main {
         text-align: center;
@@ -430,12 +436,9 @@ nav a.dennasidan {
         width: auto;
         margin: 10px;
     }
-}
 
-
-@media screen and (max-width: 650px) {
-    #logo {
-        display: none;
+    #home {
+        height: 650px;
     }
 
     #dropmenuicon {
@@ -480,3 +483,18 @@ nav a.dennasidan {
     }
 
 }
+
+
+@media screen and (max-width: 450px) {
+
+    #about {
+        height: 1400px;
+    }
+
+    #contactlinks {
+        gap: 100px;
+    }
+
+}
+
+
