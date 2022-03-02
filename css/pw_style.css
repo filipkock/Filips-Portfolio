@@ -24,10 +24,7 @@ img {
     max-height: 100%;
 }
 
-
-}
 /*  Navigering  */
-
 #menucheckbox, #dropmenuicon {
     display: none;
 }
@@ -40,6 +37,8 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 10px;
+    z-index: 100;
 }
 
 nav ul{
@@ -75,7 +74,8 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover, nav a:active {
-    color: rgb(49, 109, 238);
+    color:  rgb(40, 89, 161);
+    text-decoration: underline;
 }
 
 nav a.dennasidan {
@@ -83,13 +83,19 @@ nav a.dennasidan {
     text-decoration: underline;
 }
 
+#logo {
+    height: 70px;
+    margin-right: auto;
+    order: -1;
+}
+
 /* Home */
 
 #home {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 840px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 850px;
     justify-content: center;
     align-items: center;
 }
@@ -105,6 +111,7 @@ nav a.dennasidan {
     height: 1024px;
     width: 100%;
     z-index: -1;
+    opacity: 0.8;
 }
 
 .main {
@@ -139,16 +146,33 @@ nav a.dennasidan {
 
 .button {
     background-color: transparent;
+    width: auto;
+    height: 53px;
+    color: white;
+
+    font-weight: 300;
+    font-size: 24px;
     padding: 10px;
+
     border: 1px solid white;
-    transition: 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
-.button:hover {
+.button a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover{
     cursor: pointer;
     background-color: white;
-    color: black;
+    color: black !important;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+.button:hover > a{
+    color: black !important;
 }
 
 /* About */
@@ -174,7 +198,6 @@ nav a.dennasidan {
     justify-content: center;
     align-items: center;
     width: 50%;
-
 }
 
 #erfarenhet {
@@ -182,16 +205,15 @@ nav a.dennasidan {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    
+    width: 50%;    
 }
 
 .info {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 /* Projects */
@@ -207,6 +229,11 @@ nav a.dennasidan {
     background: rgba(243, 243, 243, 0.91);  
 }
 
+#proheader {
+    margin-bottom: 50px;
+} 
+
+
 #column {
     display: flex;
     flex-direction: column;
@@ -217,12 +244,10 @@ nav a.dennasidan {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 0px 20px;
     width: 889px;
     height: 304px;
-
-    background: linear-gradient(to top, grey 50%, white 50%);
-    background-size: 100% 200%;
+    background: linear-gradient(to top, #2c2c2c 50%, white 50%);
+    background-size: 100% 201%;
     transition: all 0.8s;
 }
 
@@ -232,7 +257,15 @@ nav a.dennasidan {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 20px;
+    top: 0;
+    transition: color 0.6s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.projectinfo h1 {
+    margin-bottom:;
+    padding-bottom: 0;
 }
 
 #greenbox {
@@ -242,107 +275,160 @@ nav a.dennasidan {
     align-items: center;
     width: 304px;
     height: 304px;
-    background-color: greenyellow;
+    background-color: #39A249;
+}
+
+.projectinfo button {
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .box:hover{
     background-position: left bottom;
-    color: white;
     border: none;
-    box-shadow: 0 0 20px grey;
+    box-shadow: 0 0 20px rgb(122, 122, 122);
 }
 
+.box:hover > .projectinfo{
+    transition-delay: 0.2s;
+    color: white; 
+}
 
-
+.box:hover > .projectinfo button{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
 
 .box img {
     width: 100px;
     height: 100px;
-    background-color: white;
-    padding: 10px;
 }
-
 
 /* contact */
 
 #contact {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 651px;
+
+    background-color: rgb(40, 89, 161);
+}
+
+#contact h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#contact p {
+    width: 700px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
     background-color: #333333;
 }
 
+#contactlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100%;
+}
+
+#contactlinks a {
+    color: white;
+    font-size: 20px;
+}
+
+
 /* media queries */
 
-@media screen and (max-width: 1100px) {
-    #buttonswrappermeny {
+
+@media screen and (max-width: 1000px) {
+
+    .box {
         flex-direction: column;
+        justify-content: flex-end;
+        width: 300px ;
+        height: 650px;
         gap: 30px;
     }
+    
+    #greenbox {
+        width: 300px;
+        height: 300px;
+    }
+
 
 }
 
-@media screen and (max-width: 1000px) {
-    body{
-        grid-template-rows: 100px auto auto 175px;   
+@media screen and (max-width: 950px) {
+
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
     }
 
-    nav ul{
-        font-size: 20px;
-        gap: 5rem;
+    .row h1, h2 {
+        margin-bottom: 10px;
     }
 
-    footer{
-        gap: 100px;
-    }    
+    #me, #erfarenhet {
+        width: 75%;
+    }
+
+    
 }
 
 @media screen and (max-width: 800px) {
-    header {
+    #about {
+        height: 800px;
+    }
+
+    #contact p {
+        width: auto;
+        margin: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .main {
+        text-align: center;
+        left: 0%;
+    }
+    
+    .main p {
+        width: auto;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    #logo {
         display: none;
     }
-    body{
-        grid-template-areas:
-        "nav   nav   nav   nav"
-        "main   main   main   main"
-        "main   main   main   main"
-        "footer footer footer footer";
-    }
 
-    nav ul{
-        gap: 4rem;
-    }
-
-    footer{
-        gap: 50px;
-    }    
-
-    .footerhead {
-        font-size: 25px;
-    }
-
-    .footerdiv {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    #buttonswrapper {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .osswrapper {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
     #dropmenuicon {
         background-image: url(../img/hamburgericon.png.crdownload);
         height: 30px;
@@ -367,15 +453,6 @@ nav a.dennasidan {
 
     nav ul {
         font-size: large;
-
-    }
-
-    #buttonswrapper {
-        display: none;
-    }
-
-    body{
-        grid-template-rows: min-content minmax(500px, 750px) auto auto;   
     }
 
     nav {
@@ -389,15 +466,8 @@ nav a.dennasidan {
         flex-direction: column;     
     }
 
-    footer {
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 10px;
-    }
-    
-
-    h1 {
-        font-size: 45px;
+    #about {
+        height: 1000px;
     }
 
 }
