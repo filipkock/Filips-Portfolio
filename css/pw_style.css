@@ -1,10 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700, 600, 400, 300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700, 600, 400, 300');
+
+
 
 /*  Hemisdans grundstil */
 
 html{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 html, body {
@@ -16,7 +21,8 @@ html, body, nav, header, main, footer, section, div, button {
     padding: 0;
     box-sizing: border-box;   
     font-family: "Open Sans", sans-serif;
-    color: white;
+    color: rgba(238, 238, 238, 1);
+    font-weight: 400;
 }
 
 img {
@@ -24,13 +30,15 @@ img {
     max-height: 100%;
 }
 
-/*  Navigering  */
+/* Allt på startsidan
+
+ Navigering  */
 #menucheckbox, #dropmenuicon {
     display: none;
 }
 
 nav{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(53, 56, 62, 1);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -49,7 +57,7 @@ nav ul{
 }
 
 nav ul li {
-    color:rgba(255, 255, 255, 1);
+    color:rgba(250, 250, 250, 1);
     font-size: 24px;
 }
 
@@ -59,8 +67,6 @@ nav ul ul {
     visibility: hidden;
     gap: 20px;
     padding: 10px;
-    background-color: #333333;
-    box-shadow: 7px 5px 10px #000000;
 }
 
 nav a {
@@ -74,19 +80,38 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover, nav a:active {
-    color:  rgb(40, 89, 161);
-    text-decoration: underline;
-}
+    color:rgba(75, 136, 185, 1);
+    text-decoration: underline;    
+    }
 
 nav a.dennasidan {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-#logo {
-    height: 70px;
-    margin-right: auto;
-    order: -1;
+/*rubriker*/
+
+.huvudrubrik {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: rgba(250, 250, 250, 1);
+    text-transform: uppercase 
+}
+
+.rubrik {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(250, 250, 250, 1);
+    text-transform: uppercase 
+}
+
+.underrubirk {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(250, 250, 250, 1);
 }
 
 /* Home */
@@ -94,24 +119,10 @@ nav a.dennasidan {
 #home {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(53, 56, 62, 1);
     height: 850px;
     justify-content: center;
     align-items: center;
-}
-
-#home::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    background-image: url(../img/Homebackground.png);
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 1024px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.8;
 }
 
 .main {
@@ -123,57 +134,89 @@ nav a.dennasidan {
 }
 
 #namn {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 3px;
+    color:rgba(137, 137, 137, 1);
 }
 
 .main h2 {
     margin-top: 0;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+    width: 816px;
 }
 
 .main p {
-    width: 395px;
+    width: 531px;
     margin-top: 0;
 }
 
-
-.rubrik {
-    font-size: 36px;
-    font-weight: normal;
-}
 
 .button {
     background-color: transparent;
     width: auto;
     height: 53px;
-    color: white;
+    color: rgba(250, 250, 250, 1);
 
-    font-weight: 300;
-    font-size: 24px;
+
     padding: 10px;
 
-    border: 1px solid white;
+    border: 1px solid rgba(250, 250, 250, 1);
     transition: all 0.5s ease-in-out;
 }
 
 .button a {
     text-decoration: none;
-    color: white;
+    color: rgba(250, 250, 250, 1);
     transition: all 0.5s ease-in-out;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 .button:hover{
     cursor: pointer;
-    background-color: white;
-    color: black !important;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    background-color: rgba(250, 250, 250, 1);
+    color: black;
+    box-shadow: 0 0 5px rgba(250, 250, 250, 1), 0 0 10px rgba(250, 250, 250, 1), 0 0 15px rgba(250, 250, 250, 1);
 }
 
 .button:hover > a{
-    color: black !important;
+    color: rgba(41, 46, 53, 1);
 }
+
+/*special button*/ 
+
+.specialbutton {
+    background-color: transparent;
+    width: auto;
+    height: 53px;
+    color: rgba(250, 250, 250, 1);
+
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid rgba(250, 250, 250, 1);
+}
+
+.specialbutton a {
+    text-decoration: none;
+    color: rgba(250, 250, 250, 1);
+    transition: all 0.5s ease-in-out;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.specialbutton:hover{
+    color: rgba(250, 250, 250, 1);    
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(53, 56, 62, 1), 0 0 10px rgba(53, 56, 62, 1), 0 0 15px rgba(53, 56, 62, 1);
+    background-color: rgba(53, 56, 62, 1);
+}
+
+.specialbutton:hover > a{
+    color: rgba(250, 250, 250, 1) !important;
+}
+
 
 /* About */
 
@@ -181,7 +224,7 @@ nav a.dennasidan {
     height: 651px;
     display: flex;
     flex-direction: column;   
-    background-color: #333333;
+    background-color: rgba(41, 46, 53, 1);
     justify-content: center;
     align-items: center;
 }
@@ -189,45 +232,61 @@ nav a.dennasidan {
 .row {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     padding: 0px;
+    gap: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #me {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;
+}
+
+#erfarenhet button {
+    width: 220px;
 }
 
 #erfarenhet {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50%;    
 }
 
-.info {
+
+.infome {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    margin-left: 60px;
-    margin-right: 60px;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.infoerfarenhet {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
+
 
 /* Projects */
 
 #projects {
     display: flex;
     flex-direction: column;   
-    color: black;
+    color: rgba(238, 238, 238, 1);
     padding: 20px;  
     justify-content: center;
     align-items: center;
     height: 850px;
-    background: rgba(243, 243, 243, 0.91);  
+    background: rgba(53, 56, 62, 1);  
 }
 
 #proheader {
@@ -247,27 +306,35 @@ nav a.dennasidan {
     align-items: center;
     width: 889px;
     height: 304px;
-    background: linear-gradient(to top, #2c2c2c 50%, white 50%);
+    background: linear-gradient(to top, rgba(238, 238, 238, 1) 50%, rgba(41, 46, 53, 1) 50%);
     background-size: 100% 201%;
     transition: all 0.8s;
 }
 
 .projectinfo {
-    color: black;
+    color: rgba(238, 238, 238, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 20px;
     top: 0;
     transition: color 0.6s ease-in-out;
     margin-bottom: 25px;
 }
 
+.projectinfo p {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 .projectinfo h1 {
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
+    transition: color 0.6s ease-in-out;
 }
+
 
 #greenbox {
     display: flex;
@@ -276,12 +343,7 @@ nav a.dennasidan {
     align-items: center;
     width: 304px;
     height: 304px;
-    background-color: #39A249;
-}
-
-.projectinfo button {
-    color: black;
-    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(75, 136, 185, 1);
 }
 
 .box:hover{
@@ -292,12 +354,20 @@ nav a.dennasidan {
 
 .box:hover > .projectinfo{
     transition-delay: 0.2s;
-    color: white; 
+    color: rgba(53, 56, 62, 1); 
+}
+
+.box:hover > .projectinfo h1{
+    transition-delay: 0.4s;
+    color: rgba(41, 46, 53, 1); 
+}
+
+.box:hover > .projectinfo button a{
+    color: rgba(41, 46, 53, 1);
 }
 
 .box:hover > .projectinfo button{
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+    border-color:  rgba(41, 46, 53, 1);
 }
 
 .box img {
@@ -313,8 +383,7 @@ nav a.dennasidan {
     justify-content: center;
     align-items: center;
     height: 651px;
-
-    background-color: rgb(40, 89, 161);
+    background-color: rgba(41, 46, 53, 1);
 }
 
 #contact h1 {
@@ -340,7 +409,7 @@ nav a.dennasidan {
     align-items: center;
     height: 150px;
 
-    background-color: #333333;
+    background-color: rgba(53, 56, 62, 1);
 }
 
 #contactlinks {
@@ -354,6 +423,340 @@ nav a.dennasidan {
 #contactlinks a {
     color: white;
     font-size: 20px;
+}
+
+/* Safety Mapping */
+
+/* main classes used*/
+
+.bolded { font-weight: 700;
+}
+
+
+.safetymain {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 856px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.safetymain h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 856px;
+    height: auto;
+}
+
+.safetymain h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 856px;
+    height: auto;
+}
+
+.safetymain p {
+    width: 856px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.p1dark{
+    color: #292E35;
+}
+
+.p2dark{
+    color: #35383E;
+}
+
+.p1white{
+    color: #FAFAFA;
+}
+
+.p2white{
+    color: #EEEEEE;
+}
+
+/*intro section*/ 
+
+#backbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#safetyhome {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(53, 56, 62, 1);
+    height: 701px;
+    align-items: center;
+    padding-top: 155px;
+}
+
+/*image section*/
+
+#intropic img {
+    display: block;
+    width: 100%;
+}
+
+/* why section */
+
+#whySection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(53, 56, 62, 1);
+    height: 905px;
+    justify-content: center;
+    align-items:center;
+}
+
+#whyimportantdiv {
+    margin-bottom: 110px;
+}
+
+#textAndPowerBI {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 95px;
+}
+
+#textAndPowerBI p {
+    width: 564px;
+    height: auto;
+}
+
+#textAndPowerBI img {
+    width: 110px;
+    height: 110px;
+}
+
+/* The Process Section*/
+
+#processSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background-color: #EEEEEE;
+    height: 518px;
+}
+
+#processSection div p {
+    width: 564px;
+}
+
+#processSection div h2 {
+    width: 564px;
+}
+
+#garretsimage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 21px;
+    width: 856px;
+}
+
+/* defining section */
+
+#definingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 854px;
+    background-color: #D6DBDF;
+}
+
+#definingSection ul {
+    margin: 0px;
+    width: 564px;
+    height: 120px;
+    line-height: 30px;
+
+}
+
+#definingSection p {
+    margin-bottom: 55px;
+}
+
+
+/* user and problem section */
+
+#problemandUserSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(53, 56, 62, 1);
+    height: 1691px;
+    justify-content: center;
+    align-items:center;
+}
+
+#problemandUserSection ul {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px;
+    
+    width: 553px;
+    height: 240px;
+
+}
+
+#bubbelFlexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 182px;
+
+    width: 847px;
+    height: 120px;
+    margin-bottom: 160px;
+}
+
+#userFlexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 43px;
+    
+    width: 856.38px;
+    height: 240px;
+}
+
+#problemandUserSection h3 {
+    margin-top: 55px;
+}
+
+/* specificationSection*/
+
+#specificationSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6DBDF;
+    height: 983px;
+    justify-content: center;
+    align-items:center;
+}
+
+#specificationSection ul {
+    margin: 0px;
+    line-height: 30px;
+}
+
+
+/*information architecture*/
+
+#informationSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #35383E;
+    height: 989px;
+    justify-content: center;
+    align-items:center;
+}
+
+#informationSection img {
+    margin-top: 146px;
+}
+
+/* sketching */
+
+#sketchingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+    height: 1605px;
+    background-color: #EEEEEE;
+
+}
+
+#sketchingSection img {
+    margin-bottom: 169px;
+}
+
+/*final section*/
+
+#finalSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+    height: 480px;
+    background-color: #D6DBDF;
+}
+
+/* My Thoughts section */
+
+#thoughtsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+    height: 641px;
+    background-color: #EEEEEE;
+
+}
+
+#thoughtsSection p {
+    margin-bottom: 85px;
+}
+
+#intropic img {
+    display: block;
+    width: 100%;
+}
+
+
+/* se more projects button*/
+
+.moreProjectsButton {
+    background-color: transparent;
+    width: auto;
+    height: 53px;
+    color: #292E35;
+
+    padding: 10px;
+
+    border: 1px solid #292E35;
+    transition: all 0.5s ease-in-out;
+}
+
+.moreProjectsButton a {
+    text-decoration: none;
+    color: #292E35;
+    transition: all 0.5s ease-in-out;
+
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.moreProjectsButton:hover{
+    cursor: pointer;
+    background-color: #292E35;
+    box-shadow: 0 0 5px #292E35, 0 0 10px #292E35, 0 0 15px #292E35;
+}
+
+.moreProjectsButton:hover > a{
+    color: rgba(250, 250, 250, 1);
 }
 
 
@@ -384,7 +787,31 @@ nav a.dennasidan {
     }
 
 
+    .main {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* försöka av automatisk repsonsive kod för all sidor*/
+
+    h2, h1, h3, p, ul, li, div{
+        width: auto !important;
+    }
+
+    .safetymain {
+        width: auto;
+        margin: 10px;
+    }
+
+    .safetymain div {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: flex-start !important;
+    }
+
 }
+
+
 
 @media screen and (max-width: 950px) {
 
@@ -394,7 +821,6 @@ nav a.dennasidan {
         justify-content: center;
         align-items: center;
         gap: 30px;
-
     }
 
     .row h1, h2 {
@@ -409,9 +835,6 @@ nav a.dennasidan {
 }
 
 @media screen and (max-width: 800px) {
-    #about {
-        height: 800px;
-    }
 
     #contact p {
         width: auto;
@@ -429,16 +852,13 @@ nav a.dennasidan {
 
     .main {
         text-align: center;
+        align-items:center;
         left: 0%;
     }
     
     .main p {
         width: auto;
         margin: 10px;
-    }
-
-    #home {
-        height: 650px;
     }
 
     #dropmenuicon {
@@ -482,6 +902,36 @@ nav a.dennasidan {
         height: 1000px;
     }
 
+    /* försöka av automatisk repsonsive kod för all sidor*/
+
+    .huvudrubrik {
+        font-size: 34px;
+    }
+
+    .rubrik {
+        font-size: 24px;
+    }
+
+    .underrubirk {
+        font-size: 18px;
+    }
+
+    .p2dark, .p2white, p, li {
+        font-size: 16px;
+    }
+
+    .safetymain div img {
+        width: 150px;
+        height: 150px;
+        margin-left: 30px;
+    }
+
+    .safetymain ul li {
+        line-height:normal
+
+    }
+
+
 }
 
 
@@ -500,8 +950,12 @@ nav a.dennasidan {
         margin-right: 30px;
     }
 
-    
+    .safetymain div img {
+        display: none;
+    }
+
+    #garretsimage {
+        height: 300px;
+    }
 
 }
-
-
