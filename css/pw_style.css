@@ -281,12 +281,25 @@ nav a.dennasidan {
 #projects {
     display: flex;
     flex-direction: column;   
-    color: rgba(238, 238, 238, 1);
-    padding: 20px;  
     justify-content: center;
     align-items: center;
-    height: 850px;
+    color: rgba(238, 238, 238, 1);
     background: rgba(53, 56, 62, 1);  
+
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
+}
+
+#projectsflexbox{
+    Display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
 }
 
 #proheader {
@@ -322,6 +335,7 @@ nav a.dennasidan {
     top: 0;
     transition: color 0.6s ease-in-out;
     margin-bottom: 25px;
+    width: 585px;
 }
 
 .projectinfo p {
@@ -336,15 +350,24 @@ nav a.dennasidan {
 }
 
 
-#greenbox {
+.projectimagebox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 304px;
     height: 304px;
+}
+
+#smboxcolor {
     background-color: rgba(75, 136, 185, 1);
 }
+
+#ddboxcolor {
+    background-color: rgba(75, 136, 185, 1);
+}
+
+
 
 .box:hover{
     background-position: left bottom;
@@ -368,11 +391,6 @@ nav a.dennasidan {
 
 .box:hover > .projectinfo button{
     border-color:  rgba(41, 46, 53, 1);
-}
-
-.box img {
-    width: 100px;
-    height: 100px;
 }
 
 /* contact */
@@ -499,8 +517,14 @@ nav a.dennasidan {
 /*image section*/
 
 #intropic img {
-    display: block;
+    display:block;
     width: 100%;
+}
+
+#intropic {
+    display: block;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* why section */
@@ -635,9 +659,6 @@ nav a.dennasidan {
     height: 240px;
 }
 
-#problemandUserSection h3 {
-    margin-top: 55px;
-}
 
 /* specificationSection*/
 
@@ -720,7 +741,7 @@ nav a.dennasidan {
     margin-bottom: 85px;
 }
 
-#intropic img {
+#mockuppic img {
     display: block;
     width: 100%;
 }
@@ -760,6 +781,85 @@ nav a.dennasidan {
 }
 
 
+/* Dependencies project*/
+
+/* defining the problem section*/
+
+#definingProblemSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 2139px;
+    background: #EEEEEE;
+}
+
+#definingProblemSection {
+    line-height: 30px;
+
+}
+
+.headermargin {
+    margin-top: 55px !important;
+}
+
+.painpointsFlexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 55px;
+    gap: 182px;
+
+    width: 937px;
+    height: 253px;
+}
+
+.painpointsFlexbox div h3 {
+    width: auto;
+}
+
+.painpointsFlexbox div p {
+    height: auto;
+    width: 393px;
+}
+
+
+
+/* Testing section */
+
+#testingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    height: 1678px;
+    background-color: #EEEEEE;
+}
+
+
+#testingSection ul {
+    line-height: 30px;
+}
+
+#testingSection img {
+    margin-top: 60px;
+}
+
+/* dd Finished result section */
+
+#ddFinishedResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    height: 1682px;
+    background-color: #35383E;
+}
+
+
+
 /* media queries */
 
 
@@ -781,7 +881,7 @@ nav a.dennasidan {
         padding-bottom: 0px;
     }
     
-    #greenbox {
+    #projectimagebox {
         width: 300px;
         height: 300px;
     }

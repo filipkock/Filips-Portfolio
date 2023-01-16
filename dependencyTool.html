@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filip Portfolio - Dependency Tool</title>
+    <link rel="stylesheet" href="css/pw_style.css">
+
+</head>
+<body>
+    <nav id="backbutton">
+        <label for="menucheckbox" id="dropmenuicon"></label>
+        <input type="checkbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html"> BACK</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section id="safetyhome">
+        <div class="safetymain">
+            <h1 class="huvudrubrik p1white">DEPENDENCY TOOL</h1>
+            <div>
+                <p class="p2white"><span class="bolded">The dependencies tool</span> is an app that has the objective to better handles dependencies for different teams in a company.</p>
+                <p>My role on the project was to fully create an application from scratch using Microsoft's Power Apps. Therefore, I did both the design and main part of the development.</p>
+            </div>
+        </div>
+    </section>
+
+    <Section id="intropic">
+        <img src="./img/ddintroSectionpic.png" alt="Picture of mockup">
+    </Section>
+
+    <section id="whySection">
+        <div id="whyimportantdiv" class="safetymain">
+            <h2 class="rubrik p1white">
+                MY OPPORTUNITY
+            </h2>
+            <p class="p2white">  
+                During one summer I had the opportunity to work as a summer worker at a company that develops vehicles. Together with another summer worker, our roles where to develop a tool that could simplify the work for the company's employees. One of those projects was to develop a tool that better handles dependencies between teams. 
+            </p>
+            <p>(For certain reasons I am recommended not to name the vehicle company.)</p>
+        </div>
+
+        <div class="safetymain">
+            <h3 class="underrubrik p1white">
+                Microsoft Power Apps
+            </h3>
+            <div id="textAndPowerBI">
+                <p class="p2white">
+                    The company has a long process when it comes to allowing and implementing new tools in their organisation. Because the company already uses Microsoft's tools, we decided to develop the tool inside Microsoft's Power apps to avoid the long waiting process. Shortly Power apps is a tool used to quickly build custom apps for business needs and was perfect for the project.</p>
+                <img src="./img/powerAppsImage.png" alt="Power Apps icon">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="definingProblemSection">
+        <div class="safetymain">
+            <h2 class="rubrik p1dark">DEFINING THE PRODUCT OBJECTIVES</h2>
+
+            <p class="p2dark">To determent the problem we needed to dive deeper into why the current way of handling dependencies was flawed. We therefore decided to try to better understand our main users, how they currently used the tool and what problems they faced when creating dependencies.</p>
+
+            <h3 class="underrubrik p1dark headermargin">Main users</h3>
+
+            <p class="p2dark">We booked meetings with our stakeholder and talked to employees at the company to get a better understanding of what problems they faced when creating and handling dependency's. The people included various employees and was for example managers, engineers and designers. By discussing their pain points, needs and how they used the tool we managed to get a deeper level of sympathy for the users.</p>
+
+            <h3 class="underrubrik p1dark headermargin">What the research showed</h3>
+
+            <p class="p2dark">After talking to the users, we could categorise our users into two general groups. These included the feature owner that relied on work form the dependent on team, which needed to accept the team owners requested feature. To represent both sides that made up this relationship I created two simplified and generalised user personas breaking down the different types of users.</p>
+
+            <img src="./img/dduserPersonas.png" alt="Image of user persona">
+
+            <p class="p2dark">Through our research and personas, we could determent that the main problem was that dependencies currently were handled in an excel document. As the employees will be planning their dependencies at the same time the excel document would have a large amount of people editing the same document at the same time. This frequently created confusion and difficulties between users when editing inside the document. Because of excels limitations it also didn't have any simple way to filter the large amount of data stored in the document and a new excel document was created for each increment. To clearly define the problem, I created a bullet list summarising the main pain points.</p>
+
+           
+
+            <div class="painpointsFlexbox">
+
+                <div>
+                    <h3 class="underrubrik p1dark">Main Pain points</h3>
+
+                    <ul class="p2dark">
+                        <li>Finding the relevant dependency</li>
+                        <li>Accepting/declining dependencies</li>
+                        <li>Creating a new document every increment</li> 
+                        <li>Multiple people editing the same document</li>
+                    </ul>
+                </div>
+        
+                <img src="./img/dependenciesPainpointsillustration.png" alt="Illustration of two people talking">
+        
+            </div>
+        </div>
+    </section>
+
+    <section id="specificationSection">
+        <div class="safetymain">
+            <h2 class="rubrik p1dark">Requirement's specification</h2>
+
+            <p class="p2dark">To transform and clarify the users need into features that could be implemented into the tool a requirement's specification was created. This was used during the work process to remember what was to be included, as well as what's to be avoided.</p>
+
+            <ul class="p2dark">
+                <li class="bolded">Content</li>
+                    <ul>
+                        <li>Gallery showing the created dependency's</li>
+                        <li>Short overview information about the created dependency's</li>
+                        <li>Dependency cards with full information</li>
+                    </ul>
+                <li class="bolded">Functions</li>
+                <ul>
+                    <li>Filter panel for the gallery</li>
+                    <li>Be able to update data</li>
+                    <li>Create new Teams</li>
+                    <li>Create new increments</li>
+                    <li>Create new dependency</li>
+                    <li>Edit a dependency</li>
+                    <li>Remove a dependency</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+
+    <section id="informationSection">
+        <div class="safetymain">
+            <h2 class="rubrik p1white">Sketch, iterate, iterate and iterate</h2>
+
+            <p class="p2white">As I didn't have access to a prototype tool when working at the company, I had to get create them using other methods. I therefore spent a good amount of time creating sketches by hand. Because of the limitations inside of Power apps I kept the design simple. When satisfied with the design we presented it and our ideas to the stakeholder where we got some feedback. The stakeholder for example wanted checkboxes when selecting sprints and a searchable function where the user could search for a feature.</p>
+
+            <img src="./img/InformationArch.png" alt="image of sketch">
+        </div>
+    </section>
+
+    <section id="testingSection">
+        <div class="safetymain">
+            <h2 class="rubrik p1dark">Developing inside power apps</h2>
+
+            <p class="p2dark">Now it was time to move the design into power apps. After one and a half week of development, I had created a simple functioning app even though it visually wasn't fully complete. The next step was to test this prototype with some of the possible end users. </p>
+
+            <h2 class="underrubirk p1dark headermargin">Testing</h2>
+
+            <p class="p2dark">I shared the demo version of the tool to my stakeholder and two other employees and gave them a few simple tasks to complete while thinking out loud and give a short reflection afterword's.</p>
+
+            <ul class="p2dark">
+                <li>Create a new dependency and find it in the gallery</li>
+                <li>Edit a dependency's status and other information</li>
+                <li>Use filter panel to all dependency from a specific team</li>
+                <li>Remove a dependency from the list</li>
+            </ul>
+
+            <p class="p2dark">While completing some of the tasks mentioned above, I observed what they found troublesome and what they found easy. Things that user commented or found difficult was changed or added into the application. Some examples of features and their solutions are summarised in the list below.</p>
+
+            <ul class="p2dark">
+                <li class="bolded">Thinking that the reset button for the filters was a apply button</li>
+                <ul>
+                    <li>Changed the colour from blue to grey to reduce attention and minimising its Call-to-Action</li>
+                </ul>
+
+                <li class="bolded">Leaving important boxes empty when creating new feature</li>
+                <ul>
+                    <li>Added a star next to important boxes and error messages when not filled</li>
+                </ul>
+
+                <li class="bolded">Not understanding how the search function works</li>
+                <ul>
+                    <li>Changed the hint text to “choose a feature” instead of “search for a feature”</li>
+                </ul>
+
+                <li class="bolded">Being unsure if the dependency was created</li>
+                <ul>
+                    <li>Added a dropdown massage after creating a dependency</li>
+                </ul>
+            </ul>
+
+            <img src="./img/ddErrormessage.png" alt="Image of display with error messages">
+        </div>
+    </section>
+
+    <section id="ddFinishedResult">
+        <div class="safetymain">
+
+            <h2 class="rubrik p1white">The finished results</h2>
+
+            <p class="p2white">After more testing and multiple demo versions the finishing design of the application was completed. The application could then be access though the company's communication tools.</p>
+
+            <div class="painpointsFlexbox">
+
+                <div>
+                    <h3 class="underrubrik p1white">SharePoint</h3>
+
+                    <p class="p2white">The app fetches data from a SharePoint list located in a SharePoint site and the users can edit the data both through the application and the SharePoint list.</p>
+                </div>
+        
+                <img src="./img/ddSharepointImage.png" alt="Image of sharepoint list">
+            </div>
+
+            <div class="painpointsFlexbox">
+                <div>
+                    <h3 class="underrubrik p1white">Browse view</h3>
+    
+                    <p class="p2white">The browse view is the main screen and lets you quickly scan through multiple dependencies to find the relevant one. On the screen there are many ways to filter what dependencies. There is for example a filter panel and a search function.</p>
+                </div>
+        
+                <img src="./img/ddBrowseView.png" alt="Image of Browse view">
+            </div>
+
+            <div class="painpointsFlexbox">
+                <div>
+                    <h3 class="underrubrik p1white">Detailed view</h3>
+    
+                    <p class="p2white">Detailed view is the screen where more information about the dependency is shown. Here you can also navigate to the edit view and delete an existing dependency.</p>
+                </div>
+        
+                <img src="./img/ddDetailedview.png" alt="Image of Browse view">
+            </div>
+
+            <div class="painpointsFlexbox">
+                <div>
+                    <h3 class="underrubrik p1white">Edit view</h3>
+    
+                    <p class="p2white">In the edit view the user can either create a new dependency or edits an already existing. After creating/editing a dependency  a message will show if it was done successfully or if the user missed something.</p>
+                </div>
+        
+                <img src="./img/ddEditview.png" alt="Image of Browse view">
+            </div>
+
+        </div>
+
+    </section>
+
+    <Section id="mockuppic">
+        <img src="./img/ddfinishedMockupImage.png" alt="Picture of mockup">
+    </Section>
+
+    <section id="thoughtsSection">
+        <div class="safetymain">
+            <h2 class="rubrik p1dark">Finishing words</h2>
+
+            <p class="p2dark">A help document describing the tool in detail was created to ensure that the tool function properly after our leave. According to our stakeholders the tool is currently in use and if it goes smoothly other departments in the orginisation will also convert to the application.</p>
+
+            <button class="moreProjectsButton">
+                <a href="index.html#projects">VIEW MORE PROJECTS</a>
+            </button>
+        
+        </div>
+    </section>
+
+    <footer>
+        <section id="footer">
+            <div id="contactlinks">
+                <a href="https://www.linkedin.com/in/filip-kockendal-aa4b15225/?originalSubdomain=se">Linkedin</a>
+
+                <a href="">Instagram</a>
+            </div>
+        </section>
+    </footer>
+
+</main>
+
+
+    
