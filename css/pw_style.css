@@ -517,7 +517,7 @@ nav a.dennasidan {
 /*image section*/
 
 #intropic img {
-    display:block;
+    display: block;
     width: 100%;
 }
 
@@ -703,12 +703,13 @@ nav a.dennasidan {
 
     height: 1605px;
     background-color: #EEEEEE;
-
 }
 
 #sketchingSection img {
     margin-bottom: 169px;
+    margin-top: 20px;
 }
+
 
 /*final section*/
 
@@ -823,6 +824,18 @@ nav a.dennasidan {
     width: 393px;
 }
 
+/* sketchin section */
+
+.appsSketch img {
+    margin-bottom: 169px;
+}
+
+.appsSketch
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
 
 /* Testing section */
