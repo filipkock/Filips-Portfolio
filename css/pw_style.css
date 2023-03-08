@@ -378,8 +378,12 @@ nav a.dennasidan {
     background-color: rgba(75, 136, 185, 1);
 }
 
+#yiliboxcolor {
+    background: #A8976A;
+}
+
 #ddboxcolor {
-    background-color: rgba(75, 136, 185, 1);
+    background: #58AA65;
 }
 
 
