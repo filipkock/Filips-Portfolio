@@ -114,6 +114,20 @@ nav a.dennasidan {
     color: rgba(250, 250, 250, 1);
 }
 
+.h4rubrik {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(250, 250, 250, 1);
+}
+
+/*punklista avstånd*/
+
+.bulletlistsection {
+    line-height: 30px;
+    margin-top: 0px;
+}
+
 /* Home */
 
 #home {
@@ -184,6 +198,7 @@ nav a.dennasidan {
 .button:hover > a{
     color: rgba(41, 46, 53, 1);
 }
+
 
 /*special button*/ 
 
@@ -469,6 +484,13 @@ nav a.dennasidan {
 }
 
 .safetymain h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 856px;
+    height: auto;
+}
+
+.safetymain h4 {
     margin-top: 0;
     margin-bottom: 30px;
     width: 856px;
@@ -804,6 +826,14 @@ nav a.dennasidan {
     margin-top: 55px !important;
 }
 
+.largeheadermargin {
+    margin-top: 70px !important;
+}
+
+.h4headermargin {
+    margin-top: 35px !important;
+}
+
 .painpointsFlexbox {
     display: flex;
     flex-direction: row;
@@ -869,6 +899,100 @@ nav a.dennasidan {
 
     height: 1682px;
     background-color: #35383E;
+}
+
+
+/* Responsive website*/
+
+/* Design process section*/
+
+#designProcess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background-color: #EEEEEE;
+    height: 1154px;
+}
+
+#designProcess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background-color: #EEEEEE;
+    height: 1154px;
+}
+
+#designprocessmargin {
+    margin-bottom: 35px;
+}
+
+/* understand section*/
+#understand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background: #D6DBDF;
+    height: 3192px;
+}
+
+#understand ul {
+    line-height: 30px;
+    margin-top: 0px;
+
+}
+
+/* define section*/
+
+#definesection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background: #35383E;
+    height: 3056px;
+}
+
+/* ideate section*/
+
+#ideateSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background: #D6DBDF;
+    height: 2939px;
+}
+
+/* yiliDesign section*/
+
+#yiliDesignsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background: #35383E;
+    height: 3801px;
+}
+
+/* test section*/
+
+#yiLiTestSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background: #EEEEEE;
+    height: 4950px;
 }
 
 
@@ -1027,6 +1151,10 @@ nav a.dennasidan {
 
     .underrubirk {
         font-size: 18px;
+    }
+
+    .h4rubrik {
+        font-size: 16px;
     }
 
     .p2dark, .p2white, p, li {
