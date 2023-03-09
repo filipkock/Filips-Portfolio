@@ -1002,7 +1002,12 @@ nav a.dennasidan {
 
 
 /* media queries */
-
+@media screen and (min-width: 1550px) {
+  .safetymain {
+    width: 1000px;
+    margin: 20px;
+}
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -1035,7 +1040,7 @@ nav a.dennasidan {
 
     /* försöka av automatisk repsonsive kod för all sidor*/
 
-    h2, h1, h3, p, ul, li, div{
+    h2, h1, h3, h4, p, ul, li, div{
         width: auto !important;
     }
 
