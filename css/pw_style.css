@@ -124,8 +124,12 @@ nav a.dennasidan {
 /*punklista avstånd*/
 
 .bulletlistsection {
-    line-height: 30px;
     margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.bulletlistsection li {
+    margin-bottom: 8px;
 }
 
 /* Home */
@@ -236,12 +240,17 @@ nav a.dennasidan {
 /* About */
 
 #about {
-    height: 651px;
     display: flex;
     flex-direction: column;   
     background-color: rgba(41, 46, 53, 1);
     justify-content: center;
     align-items: center;
+
+
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
 }
 
 .row {
@@ -314,7 +323,6 @@ nav a.dennasidan {
     align-items: center;
 
     gap: 100px;
-
 }
 
 #proheader {
@@ -535,9 +543,11 @@ nav a.dennasidan {
     display: flex;
     flex-direction: column;
     background-color: rgba(53, 56, 62, 1);
-    height: 701px;
+    height: auto;
     align-items: center;
     padding-top: 155px;
+    padding-bottom: 243px;
+    
 }
 
 /*image section*/
@@ -559,9 +569,12 @@ nav a.dennasidan {
     display: flex;
     flex-direction: column;
     background-color: rgba(53, 56, 62, 1);
-    height: 905px;
     justify-content: center;
     align-items:center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #whyimportantdiv {
@@ -594,7 +607,9 @@ nav a.dennasidan {
     align-items:center;
 
     background-color: #EEEEEE;
-    height: 518px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #processSection div p {
@@ -623,7 +638,9 @@ nav a.dennasidan {
     justify-content: center;
     align-items: center;
 
-    height: 854px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
     background-color: #D6DBDF;
 }
 
@@ -646,9 +663,12 @@ nav a.dennasidan {
     display: flex;
     flex-direction: column;
     background-color: rgba(53, 56, 62, 1);
-    height: 1691px;
     justify-content: center;
     align-items:center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #problemandUserSection ul {
@@ -692,9 +712,12 @@ nav a.dennasidan {
     display: flex;
     flex-direction: column;
     background-color: #D6DBDF;
-    height: 983px;
     justify-content: center;
     align-items:center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #specificationSection ul {
@@ -709,9 +732,12 @@ nav a.dennasidan {
     display: flex;
     flex-direction: column;
     background-color: #35383E;
-    height: 989px;
     justify-content: center;
     align-items:center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #informationSection img {
@@ -727,8 +753,10 @@ nav a.dennasidan {
     align-items:center;
 
 
-    height: 1605px;
     background-color: #EEEEEE;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #sketchingSection img {
@@ -746,7 +774,9 @@ nav a.dennasidan {
     align-items:center;
 
 
-    height: 480px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
     background-color: #D6DBDF;
 }
 
@@ -759,7 +789,9 @@ nav a.dennasidan {
     align-items:center;
 
 
-    height: 641px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
     background-color: #EEEEEE;
 
 }
@@ -817,8 +849,11 @@ nav a.dennasidan {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    height: 2139px;
     background: #EEEEEE;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 #definingProblemSection {
@@ -880,7 +915,9 @@ nav a.dennasidan {
     justify-content: center;
     align-items:center;
 
-    height: 1678px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
     background-color: #EEEEEE;
 }
 
@@ -901,7 +938,9 @@ nav a.dennasidan {
     justify-content: center;
     align-items:center;
 
-    height: 1682px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
     background-color: #35383E;
 }
 
@@ -917,21 +956,9 @@ nav a.dennasidan {
     align-items:center;
 
     background-color: #EEEEEE;
-    height: 1154px;
-}
-
-#designProcess {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-
-    background-color: #EEEEEE;
-    height: 1154px;
-}
-
-#designprocessmargin {
-    margin-bottom: 35px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 /* understand section*/
@@ -942,13 +969,9 @@ nav a.dennasidan {
     align-items:center;
 
     background: #D6DBDF;
-    height: 3192px;
-}
-
-#understand ul {
-    line-height: 30px;
-    margin-top: 0px;
-
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 /* define section*/
@@ -960,7 +983,9 @@ nav a.dennasidan {
     align-items:center;
 
     background: #35383E;
-    height: 3056px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 /* ideate section*/
@@ -972,7 +997,9 @@ nav a.dennasidan {
     align-items:center;
 
     background: #D6DBDF;
-    height: 2939px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 /* yiliDesign section*/
@@ -984,7 +1011,9 @@ nav a.dennasidan {
     align-items:center;
 
     background: #35383E;
-    height: 3801px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 /* test section*/
@@ -996,7 +1025,9 @@ nav a.dennasidan {
     align-items:center;
 
     background: #EEEEEE;
-    height: 4950px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
 }
 
 
@@ -1165,10 +1196,6 @@ nav a.dennasidan {
         flex-direction: column;     
     }
 
-    #about {
-        height: 1000px;
-    }
-
     /* försöka av automatisk repsonsive kod för all sidor*/
 
     .huvudrubrik {
@@ -1208,10 +1235,6 @@ nav a.dennasidan {
 
 @media screen and (max-width: 450px) {
 
-    #about {
-        height: 1200px;
-    }
-
     #contactlinks {
         gap: 100px;
     }
@@ -1228,5 +1251,4 @@ nav a.dennasidan {
     #garretsimage {
         height: 300px;
     }
-
 }
