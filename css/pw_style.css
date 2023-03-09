@@ -1004,9 +1004,30 @@ nav a.dennasidan {
 /* media queries */
 @media screen and (min-width: 1550px) {
   .safetymain {
-    width: 1000px;
+    width: 930px; 
     margin: 20px;
 }
+.safetymain h2 {
+    width: 930px; 
+}
+
+.safetymain h3 {
+    width: 930px; 
+}
+
+.safetymain h4 {
+    width: 930px; 
+
+}
+
+.safetymain p {
+    width: 930px; 
+}
+
+#textAndPowerBI p {
+    width: 725px;
+}
+
 }
 
 @media screen and (max-width: 1000px) {
